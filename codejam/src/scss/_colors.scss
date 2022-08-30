@@ -1,0 +1,23 @@
+@mixin after {
+    margin-left: 15px;
+    border: none;
+    content: ".";
+}
+
+.green::after {
+    @include after;
+    color: lightgreen;
+    background-color: lightgreen;
+}
+
+.brown::after {
+    @include after;
+    color: burlywood;
+    background-color: burlywood;
+}
+
+.blue::after {
+    @include after;
+    color: lightblue;
+    background-color: lightblue;
+}

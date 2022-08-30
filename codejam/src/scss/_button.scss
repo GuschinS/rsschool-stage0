@@ -1,0 +1,27 @@
+@mixin button {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    transition: 300ms;
+    opacity: 0;
+    &:hover {
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        transition: 300ms;
+    }
+    &:active {
+        box-shadow: inset 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        transition: 300ms;
+    }
+}
+button {
+    @include button;
+}
+
+.start {
+    @include button;
+    text-align: center;
+    background-color: white;
+}

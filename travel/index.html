@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon-32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/burger_menu.js" defer></script>
+    <script src="./js/scrolling.js" defer></script>
+    <script src="./js/login_popup.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/mobile_slider.js" defer></script>
+    <title>Travel</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="big" href="#"><img src="./img/logo.svg" alt="logo"></a>
+            <a class="small" href="#"><img src="./img/logo-small.svg" alt="logo"></a>
+            <nav id="myLinks" class="nav">
+                <a class="small close"><img src="./img/clarity_window-close-line.svg" alt="close"></a>
+                <ul class="navigation">
+                    <li><a class="bm" href="#preview">How It Works</a></li>
+                    <li><a class="bm" href="#steps">Plan Your Trip</a></li>
+                    <li><a class="bm" href="#destinations">Destinations</a></li>
+                    <li><a class="bm" href="#stories">Travel Stories</a></li>
+                    <li><a class="bm small account" href="#">Account</a></li>
+                    <li><a class="bm small" href="#social">Social Media</a></li>
+                </ul>
+            </nav>
+            <button class="btn-login" type="submit">Login</button>
+            <a class="small menu"><img src=" ./img/eva_menu-outline.svg" alt="menu"></a>
+        </div>
+    </header>
+    <main>
+        <section id="preview" class="preview">
+            <h1>Explore the beauty of the World</h1>
+            <p>Receive personalized recommendations for countries, hotels, activities and more</p>
+            <form action="#">
+                <input class="text" type="text" name="search" placeholder="What would you like to do?">
+                <button class="submit" type="submit">Start Planning</button>
+            </form>
+        </section>
+        <section id="steps" class="steps">
+            <h2>3 STEPS TO THE PERFECT TRIP</h2>
+            <div class="frames">
+                <div class="frame">
+                    <img src="./img/Frame_28.svg" alt="img-frame" class="img-frame">
+                </div>
+                <div class="frame center">
+                    <img src="./img/Frame_11.svg" alt="img-frame" class="img-frame">
+                </div>
+                <div class="frame">
+                    <img src="./img/Frame_12.svg" alt="img-frame" class="img-frame">
+                </div>
+            </div>
+            <div class="steps-text">
+                <p>Tell us what you want to do</p>
+                <p>Share us preferable dates.</p>
+                <p>We will give you recommendations</p>
+            </div>
+        </section>
+        <section id="destinations" class="destinations">
+            <h2>POPULAR DESTINATIONS</h2>
+            <div class="img-destination big">
+                <div class="country spain left">
+                    <img id="spain" src="./img/spain.jpg" alt="Spain">
+                    <span>SPAIN</span>
+                </div>
+                <div class="country japan center">
+                    <img id="japan" src="./img/japan.jpg" alt="Japan">
+                    <span>JAPAN</span>
+                </div>
+                <div class="country usa right">
+                    <img id="usa" src="./img/usa.jpg" alt="USA">
+                    <span>USA</span>
+                </div>
+            </div>
+            <div class="arrow_lr">
+                <div class="arrow_l">
+                    <img src="./img/ep_arrow_left.svg" alt="arrow_left">
+                </div>
+                <div class="arrow_r">
+                    <img src="./img/ep_arrow_right.svg" alt="arrow_right">
+                </div>
+            </div>
+            <div class="img-destination small">
+                <div class="country spain">
+                    <img id="spain_mobile" src="./img/spain_small.jpg" alt="Spain">
+                    <span>SPAIN</span>
+                </div>
+                <div class="country japan">
+                    <img id="japan_mobile" src="./img/japan_small.jpg" alt="Japan">
+                    <span>JAPAN</span>
+                </div>
+                <div class="country usa">
+                    <img id="usa_mobile" src="./img/usa_small.jpg" alt="USA">
+                    <span>USA</span>
+                </div>
+            </div>
+            <div class="ellipses">
+                <span class="ellipse"></span>
+                <span class="ellipse active"></span>
+                <span class="ellipse"></span>
+            </div>
+            <div class="btn-destination">
+                <button class="btn-find-more" type="submit"><img class="arrow" src="./img/bi_arrow-right.svg"
+                        alt="arrow-right">Find
+                    More</button>
+            </div>
+        </section>
+        <section id="stories" class="stories">
+            <h2>TRAVEL STORIES</h2>
+            <div class="all-stories">
+                <div class="story">
+                    <img class="big" src="./img/story_1.jpg" alt="img-story">
+                    <img class="small" src="./img/story_1_small.jpg" alt="img-story">
+                    <div class="text-story">
+                        <h3>10 Photos of Attractive Thailand</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit...
+                        </p>
+                        <strong><a href="#">Read More</a></strong>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="big" src="./img/story_2.jpg" alt="img-story">
+                    <img class="small" src="./img/story_2_small.jpg" alt="img-story">
+
+                    <div class="text-story">
+                        <h3>Canyonlands National Park, Utah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit...
+                        </p>
+                        <strong><a href="#">Read More</a></strong>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="big" src="./img/story_3.jpg" alt="img-story">
+                    <img class="small" src="./img/story_3_small.jpg" alt="img-story">
+
+                    <div class="text-story">
+                        <h3>I left my heart in the Mountains!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit...
+                        </p>
+                        <strong><a href="#">Read More</a></strong>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="big" src="./img/story_4.jpg" alt="img-story">
+                    <img class="small" src="./img/story_4_small.jpg" alt="img-story">
+
+                    <div class="text-story">
+                        <h3>The Longest journey in my life!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit...
+                        </p>
+                        <strong><a href="#">Read More</a></strong>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-see-more" type="submit"><img class="arrow" src="./img/bi_arrow-right.svg"
+                    alt="arrow-right">See
+                More</button>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-opacity"></div>
+        <div id="social" class="footer">
+            <p>All Rights Reserved © Travel Portal</p>
+            <ul class="social">
+                <li><a href="https://github.com/GuschinS" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/Instagram.svg" alt="icons_instagram"></a></li>
+                <li><a href="https://rs.school/js-stage0/" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/Youtube.svg" alt="icons_video"></a></li>
+                <li><a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/Twitter.svg" alt="icons_twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="popup_container">
+        <form action="#" class="popup">
+            <div class="name_form">
+                <h2>Log in to your account</h2>
+            </div>
+            <button class="fb"><img src="./img/facebook_logo.svg" alt="facebook_logo">Sign In with Facebook</button>
+            <button class="gg"><img src="./img/google_logo.svg" alt="google_logo">Sign In with Google</button>
+            <div class="or">
+                <span>&nbsp;or&nbsp;</span>
+            </div>
+            <label for="email" class="lemail">E-mail:</label>
+            <input type="text" id="email" name="email" autocomplete="username"><br>
+            <label for="password" class="lpassword">Password:</label>
+            <input type="password" id="password" name="password" autocomplete="current-password">
+            <button class="input_alert" onclick="openAlert()">Sign In</button>
+            <div class="fup">
+                <a href="#">Forgot Your Password?</a>
+            </div>
+            <div class="dha">
+                <p>Don't have an account?</p><a href="#">&nbsp;<strong>Register</strong></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

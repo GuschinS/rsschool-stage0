@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <div class="player-buttons">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="audio-title">Title</div>
+        <div class="progress-bar-control">
+          <input id="progress-bar" type="range" min="0" max="100" value="0">
+          <div class="current-duration-time">
+            <div class="current-time">0:00</div>
+            <span class="span-time"> / </span>
+            <div class="duration-time">0:00</div>
+          </div>
+        </div>
+        <div class="volume-control">
+          <input id="sound-volume" type="range" min="0" max="1" step="0.01">
+          <div class="volume-icon icono-volumeHigh"></div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="Minsk" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input id="name" type="text" class="name" autocomplete="on" placeholder="[Enter Name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quotes">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="window-settings-background">
+      <div class="window-settings close-window">
+        <h3>Settings</h3>
+        <div class="language">
+          <span class="language-span">Language</span>
+          <select class="select-language" name="select">
+            <option value="en" selected="selected">English</option>
+            <option value="ru">Русский</option>
+          </select>
+        </div>
+        <div class="source">
+          <span class="source-span">Background image source</span>
+          <select class="select-source" name="select">
+            <option value="github" selected="selected">GitHub</option>
+            <option value="unsplash">Unsplash API</option>
+            <option value="flickr">Flickr API</option>
+          </select>
+        </div>
+        <div class="query">
+          <span class="query-name">Search</span>
+          <input type="text" name="query" id="query" placeholder="Enter tag" autocomplete="off"/>
+        </div>
+        <ul class="setting-item-container">
+          <li class="setting-item">
+            <span class="setting-name">Audio player</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+          <li class="setting-item">
+            <span class="setting-name">Weather</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+          <li class="setting-item">
+            <span class="setting-name">Quote</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+          <li class="setting-item">
+            <span class="setting-name">Time</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+          <li class="setting-item">
+            <span class="setting-name">Date</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+          <li class="setting-item">
+            <span class="setting-name">Greeting</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+          <li class="setting-item">
+            <span class="setting-name">To do</span>
+            <span class="toggle-slider on">
+              <svg class="toggle-switch" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="window-todo-background">
+      <div class="todo-container">
+        <div class="todo-body">
+          <ul class="todo-items"></ul>
+          <p class="empty-title">Add a to do to get started</p>
+          <div class="new-todo">+</div>
+          <div class="todo-footer">
+            <input type="text" name="todo-input" id="todo-input" autofocus = "on" placeholder = "New To do"/>
+            </div>
+          </div>
+        <div class="todo-button">To do</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

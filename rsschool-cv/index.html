@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon-32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV Sergei Gushchin</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="photo">
+                <img src="img/new_photo.jpg" alt="photo_SG">
+            </div>
+            <div class="info">
+                <h1>Sergei Gushchin</h1>
+                <h2>Junior Frontend Developer</h2>
+            </div>
+        </header>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-information">Contact information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skils">Skills at a Glance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#code">Code example</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#classes">Online classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lang">Languages</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <ul id="contact-information">
+                <li>
+                    <h2>Contact information:</h2>
+                </li>
+                <li>
+                    <p>Phone: <a href="tel:+48797807995">+48 797 807 995</a></p>
+                </li>
+                <li>
+                    <p>E-mail: <a href="mailto:guschins@gmail.com">guschins@gmail.com</a></p>
+                </li>
+                <li>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/sergei-gushchin/"
+                            target="_blank">sergei-gushchin</a>
+                    </p>
+                </li>
+                <li>
+                    <p>GitHub: <a href="https://github.com/GuschinS" target="_blank">GuschinS</a></p>
+                </li>
+            </ul>
+            <article id="about">
+                <h2>About</h2>
+                <p>
+                    I have no commercial experience yet, but I help nonprofit organizations and activists to create and
+                    maintain Web pages as a volunteer. Now, I am changing my main occupation and looking for a job in IT
+                    area. My strengths are the ability to structure tasks, prioritize, be flexible and take
+                    responsibility. I have been living in Poland for 8 years and I am a citizen of Poland.
+                </p>
+            </article>
+            <ul id="skils">
+                <li>
+                    <h2>Skills at a Glance:</h2>
+                </li>
+                <li>
+                    <p>Languages: JavaScript, HTML5, CSS3.</p>
+                </li>
+                <li>
+                    <p>Frameworks: Angular, React.</p>
+                </li>
+                <li>
+                    <p>Other: Git/GitHub.</p>
+                </li>
+            </ul>
+            <section id="code">
+                <h2>Code</h2>
+                <pre>
+                    <code>
+    function createPhoneNumber(numbers) {
+        let arr1 = numbers.splice(0, 3);
+        let arr2 = numbers.splice(0, 3);
+        let arr3 = numbers.splice(0, 4);
+        const str = `(${arr1.join('')}) ${arr2.join('')}-${arr3.join('')}`
+    
+        return str
+    }
+                    </code>
+                </pre>
+            </section>
+            <section id="projects">
+                <div>
+                    <h2>Projects:</h2>
+                </div>
+                <div>
+                    <h4>Momentum Webpack Project</h4>
+                    <p>To run locally:</p>
+                    <p>git clone https://github.com/rolling-scopes-school/guschins-JSFEPRESCHOOL2022Q2.git</p>
+                    <p>cd momentum</p>
+                    <p>npm install</p>
+                    <p>npm start</p>
+                    <img src="img/momentum_small.png" alt="Momentum Webpack Project">
+                    <p><a href="https://rolling-scopes-school.github.io/guschins-JSFEPRESCHOOL2022Q2/momentum/dist/" target="_blank">Demo</a></p>
+                    <p><a href="https://github.com/rolling-scopes-school/guschins-JSFEPRESCHOOL2022Q2/tree/momentum/momentum" target="_blank">See code</a></p>
+                </div>
+                <hr>
+                <div>
+                    <h4>Travel Desktop and Mobile project</h4>
+                    <img src="img/travel_small.png" alt="Travel Desktop and Mobile project">
+                    <p><a href="https://rolling-scopes-school.github.io/guschins-JSFEPRESCHOOL2022Q2/travel/" target="_blank">Demo</a></p>
+                    <p><a href="https://github.com/rolling-scopes-school/guschins-JSFEPRESCHOOL2022Q2/tree/travel/travel" target="_blank">See code</a></p>
+                </div>
+                <hr>
+                <div>
+                    <h4>This project uses API restcountries</h4>
+                    <p>Instructions:</p>
+                    <p>Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will
+                        automatically reload if you change any of the source files.</p>
+                    <img src="img/angular_gwo_small.png" alt="project uses API restcountries">
+                    <p><a href="https://guschins.github.io/gwo/" target="_blank">Demo</a></p>
+                    <p><a href="https://github.com/GuschinS/gwo/" target="_blank">See code</a></p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h4>MyReads Project</h4>
+                    <p>To run locally:</p>
+                    <p>git clone https://github.com/GuschinS/reactnd-project-myreads.git</p>
+                    <p>cd reactnd-project-myreads</p>
+                    <p>npm install</p>
+                    <p>npm start</p>
+                    <img src="img/MyReads_small.png" alt="MyReads Project">
+                    <p><a href="https://github.com/GuschinS/reactnd-project-myreads/" target="_blank">See code</a></p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h4>Pixel Art Maker</h4>
+                    <img src="img/pam1_198x206.png" alt="Pixel Art Maker">
+                    <p><a href="https://guschins.github.io/project-pixel-art-maker/" target="_blank">Playing</a></p>
+                    <p><a href="https://github.com/GuschinS/project-pixel-art-maker/" target="_blank">See code</a></p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h4>Restaurant Reviews</h4>
+                    <p>To run locally:</p>
+                    <p>In a terminal, check the version of Python you have: python -V.</p>
+                    <p>If you have Python 2.x, spin up the server with: python -m SimpleHTTPServer 8000 (or some other
+                        port, if port 8000 is already in use.)</p>
+                    <p>For Python 3.x, you can use: python -m http.server.</p>
+                    <p>If you don't have Python installed, navigate to Python's website to download and install the
+                        software.</p>
+                    <p>With your server running, visit the site: http://localhost:8000</p>
+                    <img src="img/rr_small.png" alt="Restaurant Reviews">
+                    <p><a href="https://github.com/GuschinS/restaurant-udacity-stg1/" target="_blank">See code</a></p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h4>Classic Arcade Game Clone</h4>
+                    <p>Instructions:</p>
+                    <p>The player must go to the top, avoiding a collision with the bugs. In a collision, the player
+                        loses 1 life. 3 collisions - the end of the game. When a player reaches the top, he gets 10
+                        points and returns to the starting position. Each time, the speed of beetles increases.</p>
+                    <img src="img/ag_small.png" alt="Classic Arcade Game Clone">
+                    <p><a href="https://guschins.github.io/frontend-nanodegree-arcade-game/" target="_blank">Playing</a>
+                    </p>
+                    <p><a href="https://github.com/GuschinS/frontend-nanodegree-arcade-game/tree/master"
+                            target="_blank">See code</a></p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h4>Memory game</h4>
+                    <p>Dependencies</p>
+                    <p>I create this game using my own dom methods to keep the code clean. It does not depend on
+                        third-party libraries. No more jQuery and Boostrap. Just HTML, CSS and JavaScript! I find that
+                        the new Udacity courses on ES6 are amazing!</p>
+                    <p>Instructions:</p>
+                    <p>The game is built using simple HTML, CSS and JavaScript. Click on the map to open it. Maps will
+                        be flipped if the next card does not match the open one. Your score will depend on the moves
+                        taken to open all the cards. The less moves, the better.</p>
+                    <img src="img/gm1_198x204.png" alt="Memory game">
+                    <p><a href="https://guschins.github.io/fend-project-memory-game/" target="_blank">Playing</a></p>
+                    <p><a href="https://github.com/GuschinS/fend-project-memory-game/" target="_blank">See code</a></p>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <p>
+                    <a href="https://narfu.ru/en/" target="_blank">Arkhangelsk State Technical University - Engineer</a>
+                </p>
+                <p>
+                    Major: Construction and Research of Motor Vehicles
+                </p>
+            </section>
+            <ul id="classes">
+                <li>
+                    <h2>Online classes:</h2>
+                </li>
+                <li>
+                    <p>HTML Academy: <a href="https://htmlacademy.ru/" target="_blank">HTML, CSS, JS</a></p>
+                </li>
+                <li>
+                    <p>Sololearn: <a href="https://www.sololearn.com/learning/1024" target="_blank">JavaScript</a></p>
+                </li>
+                <li>
+                    <p>EdX: <a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript"
+                            target="_blank">CS50's Web Programming with Python and JavaScript</a>
+                    </p>
+                </li>
+                <li>
+                    <p>Udacity: <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011"
+                            target="_blank">Front-End Web Developer</a></p>
+                </li>
+                <li>
+                    <p>FreeCodeCamp: <a
+                            href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                            target="_blank">JavaScript Algorithms and Data Structures</a></p>
+                </li>
+            </ul>
+            <section id="lang">
+                <h2>Languages</h2>
+                <p>Russian - Native</p>
+                <p>Polish - Intermediate</p>
+                <p>English - Elementary</p>
+            </section>
+        </main>
+        <footer>
+            <div class="github">
+                <span>GitHub:</span>
+                <a href="https://github.com/GuschinS">GuschinS.</a>
+                <span>2022.</span>
+            </div>
+            <div class="rs">
+                <a href="https://rs.school/js/">
+                    <img src="img/rs_school_js.svg" alt="rs_school_js">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

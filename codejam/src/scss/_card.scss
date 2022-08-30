@@ -1,0 +1,53 @@
+@mixin bigCard {
+    background-size: contain;
+    width: 200px;
+    height: 260px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 300ms;
+    &:hover {
+        transform: scale(1.05);
+        transition: 300ms;
+    }
+}
+
+.azathoth {
+    background-image: url("../assets/img/Azathoth.png");
+    @include bigCard;
+    cursor: pointer;
+}
+
+.cthulhu {
+    background-image: url("../assets/img/Cthulthu.png");
+    @include bigCard;
+    cursor: pointer;
+}
+
+.iogSothoth {
+    background-image: url("../assets/img/IogSothoth.png");
+    @include bigCard;
+    cursor: pointer;
+}
+
+.shubNiggurath {
+    background-image: url("../assets/img/ShubNiggurath.png");
+    @include bigCard;
+    cursor: pointer;
+}
+
+.back,
+.front {
+    background-image: url("../assets/img/back-side-of-card.jpg");
+    background-size: contain;
+    cursor: default;
+    opacity: 0;
+    @include bigCard;
+}
+
+div.back {
+    width: 187px;
+}
+div.front {
+    width: 178px;
+}
