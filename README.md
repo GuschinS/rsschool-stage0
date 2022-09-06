@@ -10,3 +10,5 @@ Repository for [@guschins](https://www.linkedin.com/in/sergei-gushchin/)
 [Momentum](https://guschins.github.io/rsschool-stage0/momentum/dist/)
 
 [CodeJam](https://guschins.github.io/rsschool-stage0/codejam/dist/)
+
+[Shelter](https://guschins.github.io/rsschool-stage0/shelter/dist/)
